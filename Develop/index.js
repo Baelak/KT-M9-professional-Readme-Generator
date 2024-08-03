@@ -8,75 +8,75 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "Please enter your Project title",
+        message: "Please enter your Project title 😊",
     
     },
     {
         type: "input",
         name: "description",
-        message: "Please enter a description of your Project",
+        message: "Please enter a description of your Project 😊",
     
     },
     {
         type: "input",
         name: "link",
-        message: "Please enter a URL for your Project",
+        message: "Please enter a URL for your Project 😊",
     
     },
     {
         type: "input",
         name: "license",
-        message: "Please enter licenses used for your Project",
+        message: "Please enter licenses used for your Project 😊",
         choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"],
     
     },
     {
         type: "input",
         name: "require",
-        message: "Please enter dependencies for your Project",
+        message: "Please enter dependencies for your Project 😊",
     
     },
     {
         type: "input",
         name: "features",
-        message: "Please enter features of your Project",
+        message: "Please enter features of your Project 😊",
     
     },
     {
         type: "input",
         name: "usage",
-        message: "Please enter languages and technologies used for your Project",
+        message: "Please enter languages and technologies used for your Project 😊",
     
     },
     {
         type: "input",
         name: "creator",
-        message: "Please enter your GitHub username",
+        message: "Please enter your GitHub username 😊",
     
     },
     {
         type: "input",
         name: "email",
-        message: "Please enter your Email address",
+        message: "Please enter your Email address 😊",
     
     },
     {
         type: "input",
         name: "contributors",
-        message: "Please enter any contributor's GitHub usernames",
+        message: "Please enter any contributor's GitHub usernames 😊",
         default: "",
     
     },
     {
         type: "input",
         name: "test",
-        message: "Please enter walkthrough of required tests if applicable",
+        message: "Please enter walkthrough of required tests if applicable 😊",
     
     },
     {
         type: "prompt",
         name: "questions",
-        message: "Please feel free to email me at teklemichaelkaleab@gmail.com if you have any questions",
+        message: "Please feel free to email me at teklemichaelkaleab@gmail.com if you have any questions 😊",
     
     },
     
