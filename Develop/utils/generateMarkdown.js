@@ -1,4 +1,5 @@
 //Function to display logo
+
 function generatedLogo(logoPath = "Logo", logoAltText = "Logo"){
   return `
   <div style="display: flex; justify-content: center; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">
@@ -8,6 +9,7 @@ function generatedLogo(logoPath = "Logo", logoAltText = "Logo"){
 }
 // Function that returns a license badge based on which license is passed in
 // If there is no license, it returns an empty string
+
 function renderLicenseBadge(license) {
   if (license && license.length > 0) {
     return license.map(license =>`![Github license](https://img.shields.io/badge/license-${license}-green.svg)`).join(' ');
@@ -15,7 +17,8 @@ function renderLicenseBadge(license) {
   return "";
 }
 
-// Function to generate markdown for README
+// Functions to generate markdown for README
+
 function generateCompleteMarkdown(data) {
   const logoSnippet = generatedLogo(data.logoPath);
   return `${logoSnippet} 

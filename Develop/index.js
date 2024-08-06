@@ -1,11 +1,13 @@
 // Packages needed for this application
+
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
 const {generateCompleteMarkdown} = require('./utils/generateMarkdown.js');
 const logoPath = "../generatedQR.png";
 
-// TODO: Create an array of questions for user input
+// An array of questions for user input
+
 const questions = [
     {
         type: "input",
@@ -84,7 +86,8 @@ const questions = [
     
 ];
 
-// Function to write README file
+// Functions to write the README file
+
 function init() {
      inquirer.prompt(questions).then((responses) => {
       console.log("Creating Professional README.md File...");
