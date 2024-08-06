@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
@@ -84,7 +84,7 @@ const questions = [
     
 ];
 
-// TODO: Create a function to write README file
+// Function to write README file
 function init() {
      inquirer.prompt(questions).then((responses) => {
       console.log("Creating Professional README.md File...");
@@ -95,10 +95,7 @@ function init() {
   }
 
 init();
-// TODO: Create a function to write to a README file
+
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-  };
-
-
-  
+  }; 
