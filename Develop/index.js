@@ -2,14 +2,16 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
-const generateMarkdown = require("./utils/generateMarkdown");
+const {generateCompleteMarkdown} = require('./utils/generateMarkdown.js');
+const logoPath = "../generatedQR.png";
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: "input",
         name: "title",
         message: "Please enter your Project title 😊",
-    
+
     },
     {
         type: "input",
@@ -24,9 +26,9 @@ const questions = [
     
     },
     {
-        type: "input",
+        type: "checkbox",
         name: "license",
-        message: "Please enter licenses used for your Project 😊",
+        message: "Please select licenses used for your Project 😊",
         choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"],
     
     },
@@ -84,16 +86,19 @@ const questions = [
 
 // TODO: Create a function to write README file
 function init() {
-    inquirer.prompt(questions).then((responses) => {
+     inquirer.prompt(questions).then((responses) => {
       console.log("Creating Professional README.md File...");
-      writeToFile("./generatedREADME/README.md", generateMarkdown({ ...responses }));
+      responses.logoPath = logoPath;
+      const markdownContent = generateCompleteMarkdown(responses);
+       writeToFile("./generatedREADME/README.md", markdownContent);
     });
   }
+
 init();
-// TODO: Create a function to initialize app
+// TODO: Create a function to write to a README file
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
   };
 
-// Function call to initialize app
-init();
+
+  

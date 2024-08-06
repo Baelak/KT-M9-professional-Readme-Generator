@@ -1,39 +1,41 @@
+function generatedLogo(logoPath = "Logo", logoAltText = "Logo"){
+  return `
+  <div style="display: flex; justify-content: center; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">
+  <img src="${logoPath}" alt="${logoAltText}" style="max-height: 200px; max-width: 200px;">
+</div>
+  `;
+}
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  if (license && license.length > 0) {
+    return license.map(license =>`![Github license](https://img.shields.io/badge/license-${license}-green.svg)`).join(' ');
   }
   return "";
 }
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title} 
-${renderLicenseBadge(data.license)}
+function generateCompleteMarkdown(data) {
+  const logoSnippet = generatedLogo(data.logoPath);
+  return `${logoSnippet} 
+## ${data.title}
+\n${renderLicenseBadge(data.license)}
 ## Description
 ${data.description}
 ## Deployed Application URL
-![alt-text](${data.screenshot})
+${data.link}
 ## Table of Contents
 * [Features](#features)
-* [Languages & Dependencies](#languagesanddependencies)
-* [How to Use This Application](#HowtoUseThisApplication)
+* [Dependencies](#dependencies)
+* [Languages and Technologies](#languages-and-technologies)
 * [Contributors](#contributors)
 * [Testing](#testing)
 * [Questions](#questions)
 ## Features
 ${data.features}
-## Languages & Dependencies
+## Dependencies
 ${data.require}
-## How to Use This Application:
+## Languages and Technologies:
 ${data.usage}
 ## Contributors
 ${data.contributors}
@@ -44,4 +46,4 @@ Please send your questions [here](mailto:${data.email}?subject=[GitHub]%20Dev%20
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generatedLogo, generateCompleteMarkdown};

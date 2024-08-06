@@ -1,25 +1,31 @@
-# 1 
-![Github license](https://img.shields.io/badge/license-4-blue.svg)
+
+  <div style="display: flex; justify-content: center; border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">
+  <img src="../generatedQR.png" alt="Logo" style="max-height: 200px; max-width: 200px;">
+</div>
+   
+## A
+
+![Github license](https://img.shields.io/badge/license-MIT-green.svg) ![Github license](https://img.shields.io/badge/license-APACHE2.0-green.svg) ![Github license](https://img.shields.io/badge/license-Boost1.0-green.svg) ![Github license](https://img.shields.io/badge/license-MPL2.0-green.svg) ![Github license](https://img.shields.io/badge/license-BSD2-green.svg) ![Github license](https://img.shields.io/badge/license-BSD3-green.svg) ![Github license](https://img.shields.io/badge/license-none-green.svg)
 ## Description
-2
+A
 ## Deployed Application URL
-![alt-text](undefined)
+A
 ## Table of Contents
 * [Features](#features)
-* [Languages & Dependencies](#languagesanddependencies)
-* [How to Use This Application](#HowtoUseThisApplication)
+* [Dependencies](#dependencies)
+* [Languages and Technologies](#languages-and-technologies)
 * [Contributors](#contributors)
 * [Testing](#testing)
 * [Questions](#questions)
 ## Features
-6
-## Languages & Dependencies
-5
-## How to Use This Application:
-7
+A
+## Dependencies
+A
+## Languages and Technologies:
+A
 ## Contributors
-10
+AA
 ## Testing
-11
+A
 ## Questions
-Please send your questions [here](mailto:9?subject=[GitHub]%20Dev%20Connect) or visit [github/8](https://github.com/8).
+Please send your questions [here](mailto:A?subject=[GitHub]%20Dev%20Connect) or visit [github/A](https://github.com/A).
