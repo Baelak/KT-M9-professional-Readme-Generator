@@ -13,7 +13,7 @@ This is a README generator that uses the users answers to create a professional 
 ## Application Walkthrough Video URL
 https://drive.google.com/file/d/1ApLULSoHwPOrpWYz6wGZVR82fUxP9j9n/view?usp=sharing
 
-## Deployed Application URL
+## Repository URL
 https://github.com/Baelak/KT-M9-professional-Readme-Generator
 
 ## Table of Contents
